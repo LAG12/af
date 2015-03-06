@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ajax contact form</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Custom CSS -->
+    <style type="text/css">
+     
+        
+        hr {
+            color:activecaption;
+            border-color:activecaption;
+            border-style:dashed;
+            margin-top: 0;
+	}
+        h1, p {
+            color:brown;
+            font-weight:bold;
+        }
+        .title {
+            background-color:azure;
+        }
+        .ghost-button {
+            display: inline-block;
+            width: 200px;
+            padding: 8px;
+            color: brown;
+            border: 1px solid brown;
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+        }
+        .ghost-button:hover,
+        .ghost-button:active {
+          background-color: #fff;
+          color: #000;
+        } 
+        
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div class="title">
+        <div class="container">
+                <h1>Links</h1>
+                <p></p>
+                <p><a class="ghost-button" href="http://lagodev.altervista.org/form1/form.html" role="button">Home</a>&nbsp;&nbsp;&nbsp;
+                   <a class="ghost-button" href="http://lagodev.altervista.org/form1/links.html" role="button">Links</a>&nbsp;&nbsp;&nbsp;
+                   <a class="ghost-button" href="https://github.com/LAG12" role="button">Github</a>&nbsp;&nbsp;&nbsp;
+                   <a class="ghost-button" href="http://lago72.altervista.org/" role="button">Lag's Weblog</a>&nbsp;&nbsp;&nbsp;
+                </p>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>PHP</h3>
+                <br>
+                <p><a href="http://php.net/manual/it/function.header.php"> header()</a></p>
+                <p><a href="http://php.net/manual/it/function.http-response-code.php"> http_response_code()</a></p>
+                <p><a href="http://php.net/manual/it/reserved.variables.server.php"> $_SERVER()</a></p>
+                <p><a href="http://php.net/manual/it/function.strip-tags.php"> strip_tags()</a></p>
+                <p><a href="http://php.net/manual/it/function.trim.php"> trim()</a></p>
+                <p><a href="http://php.net/manual/it/function.str-replace.php"> str_replace()</a></p>
+                <p><a href="http://php.net/manual/it/function.filter-var.php"> filter_var()</a></p>
+                <p><a href="http://php.net/manual/it/book.filter.php"> Data Filtering</a> -- <a href="http://www.html.it/articoli/php-5-le-filter-functions-1/">le filter functions </a></p>
+                <p><a href="http://php.net/manual/it/function.empty.php"> empty()</a></p>
+                <p><a href="http://php.net/manual/it/function.mail.php"> mail()</a></p>
+                <p><a href="http://php.net/manual/it/function.echo.php"> echo()</a></p>
+                <p><a href="http://php.net/manual/it/function.urldecode.php"> urldecode()</a></p>
+                <br>
+            </div>    
+            <div class="col-md-4">
+                <h3>jQuery</h3>
+                <br>
+                <p><a href="http://api.jquery.com/submit/"> submit()</a></p>
+                <p><a href="http://api.jquery.com/event.preventDefault/"> preventDefault()</a></p>
+                <p><a href="http://api.jquery.com/serialize/"> serialize()</a></p>
+                <p><a href="http://api.jquery.com/jQuery.ajax/"> ajax()</a></p>
+                <p><a href="http://api.jquery.com/deferred.done/"> done()</a></p>
+                <p><a href="http://api.jquery.com/deferred.fail/"> fail()</a></p>
+                <p><a href="http://api.jquery.com/val/"> val()</a></p>
+                <p><a href="http://api.jquery.com/addClass/"> addClass()</a></p>
+                <p><a href="http://api.jquery.com/removeClass/"> removeClass()</a></p>
+                <p><a href="http://api.jquery.com/?s=text"> text()</a></p>
+                <p><a href="http://api.jquery.com/event.preventDefault/"> submit()</a></p>
+            </div>
+            <div class="col-md-4">
+                <h3>Varie</h3>
+                <br>
+            </div>
+        </div>   
+    </div>
+    <br>
+    
+    <!--[if lt IE 9]>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script src="app.js"></script>   
+
+</body>
+</html>  
