@@ -1,5 +1,5 @@
 <?php
-
+    //  Ajax Form v. 1.0
     // Controlliamo che la richiesta sia stata effettuata mediante il metodo POST
     // altrimenti lo script ritornerà un messaggio di errore 403 Forbidden
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
