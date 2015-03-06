@@ -31,7 +31,7 @@
 
         // Impostiamo l'indirizzo del destinatario dei dati del modulo
         // N.B.: Metti qui l'email a cui arriveranno i dati del modulo
-        $destinatario = "antonio.gambina@gmail.com";
+        $destinatario = "tuo.indirizzo@email.com";
 
         // Impostiamo il soggetto della email
         $soggetto = "Nuovo contatto da $nome"." $cognome";
