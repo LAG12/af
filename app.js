@@ -8,18 +8,18 @@ $(function() {
 	// Get the messages div.
 	var formMessages = $('#form-messages');
 
-	// Impostiamo un event listener che intercetter‡ gli eventi submit sul form. 
-        // Possiamo fare ciÚ attraverso il metodo jQuery submit().
+	// Impostiamo un event listener che intercetter√† gli eventi submit sul form. 
+        // Possiamo fare ci√≤ attraverso il metodo jQuery submit().
         // All'evento submit (non appena l'utente invia il modulo) viene eseguita una funzione
 	$(form).submit(function(e) {
-		// Il codice event.preventDefault() fa si che il modulo non venga inviato nella modalit‡ standard 
+		// Il codice event.preventDefault() fa si che il modulo non venga inviato nella modalit√† standard 
                 // (portandoci quindi alla pagina process.php). Dobbiamo infatti inviare il modulo mediante Ajax
 		e.preventDefault();
 
 		// Serializziamo i dati del modulo. Attraverso il metodo jQuery serialize() intercettiamo i dati 
                 // del modulo e li immagaziniamo nella variabile dati-form.
-                // Per capire meglio ciÚ che verr‡ memorizzato nella variabile term, immaginiamo di aver inserito nel 
-                // campo nome il valore ciccio e nel campo surname il valore pasticcio, la variabile dati-form sar‡ cosÏ valorizzata:
+                // Per capire meglio ci√≤ che verr√† memorizzato nella variabile term, immaginiamo di aver inserito nel 
+                // campo nome il valore ciccio e nel campo surname il valore pasticcio, la variabile dati-form sar√† cos√¨ valorizzata:
                 // nome=ciccio&cognome=pluto
 		var dati_form = $(form).serialize();
                 // In questo comodissimo modo ci siamo evitati di dover associare ad ogni elemento del form un valore con val(),
@@ -33,12 +33,12 @@ $(function() {
                 alert(dati_form);
                 
                 // I dati del modulo, contenuti nella variabile dati_form, verranno a questo punto (vedi sotto)
-                // inviati via Ajax al file process.php che li elaborar‡ in maniera semplice, usando
-                // POST + #id dellíinput del form. Es.: 
+                // inviati via Ajax al file process.php che li elaborar√† in maniera semplice, usando
+                // POST + #id dell‚Äôinput del form. Es.: 
                 // $testo = $_POST['testo'];
                 // $testo2 = $_POST['testo2'];
                 
-                // Un accorgimento importante se usate serialize() potrebbe essere (ma qui non lo userÚ)
+                // Un accorgimento importante se usate serialize() potrebbe essere (ma qui non lo user√≤)
                 //  sicuramente quello di filtrare il POST con la funzione PHP urldecode. Es.:
                 // //recupero
                 // $testo= urldecode($_POST['testo']);
@@ -47,21 +47,21 @@ $(function() {
                 // echo $testo; echo "<br>";
                 // echo $testo2; echo "<br>";
 
-		// Inviamo i dati usando il metodo jquery AJAX.
+		// Inviamo i dati usando il metodo jquery AJAX
 		$.ajax({
                         //imposto il tipo di invio dati (GET O POST)
 			type: 'POST',
                         // Dove devo inviare i dati recuperati dal form?
-			url: $(form).attr('action'), // la variabile url memorizza quanto Ë specificato 
+			url: $(form).attr('action'), // la variabile url memorizza quanto √® specificato 
                                                     //nell' action del form (process.php)
-                                                    // potremmo anche fare cosÏ: -- url: "process.php" --
+                                                    // potremmo anche fare cos√¨: -- url: "process.php" --
 			//Quali dati devo inviare?
                         // I dati contenuti nella variabile dati_form, ovviamente
                         data: dati_form
 		})
                 
                 // Qui gestiremo la risposta positiva del server attraverso il metodo .done()
-                // che Ë un'alternativa al parametro success del metodo .ajax()
+                // che √® un'alternativa al parametro success del metodo .ajax()
 		.done(function(response) {
 			// Ci assicuriamo che il div formMessages abbia la classe success
 			$(formMessages).removeClass('error');
@@ -77,7 +77,7 @@ $(function() {
 			$('#messaggio').val('');
 		})
                 // Qui gestiremo una risposta negativa del server attraverso il metodo .fail()
-                // che Ë un'alternativa al parametro error del metodo .ajax();
+                // che √® un'alternativa al parametro error del metodo .ajax();
 		.fail(function(data) {
 			// Ci assicuriamo che il div formMessages abbia la classe error
 			$(formMessages).removeClass('success');
@@ -89,7 +89,7 @@ $(function() {
 			if (data.responseText !== '') {
 				$(formMessages).text(data.responseText);
 			} else {
-				$(formMessages).text('Oops! Si Ë avuto un errore ed il tuo messaggio non Ë stato inviato.');
+				$(formMessages).text('Oops! Si √® avuto un errore ed il tuo messaggio non √® stato inviato.');
 			}
 		});
                 
