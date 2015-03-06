@@ -10,7 +10,7 @@
         // Con la funzione strip_tags rimuoviamo eventuali tag HTML e PHP. 
         // str_replace — Sostituisce tutte le occorrenze della stringa cercata con la stringa di sostituzione. 
         // Il filtro FILTER_SANITIZE_EMAIL, utilizzato come secondo argomento per la funzione filter_var(), 
-        // consente di rimuovere da una determinata stringa tutti i caratteri non consentiti per un indirizzo di 
+        // consente di rimuovere, da una determinata stringa, tutti i caratteri non consentiti per un indirizzo di 
         // posta elettronica, permette invece di utilizzare tutte le lettere dell’alfabeto, simboli numerici e i 
         // caratteri !#$%&’*+-/=?^_`{|}~@.[]
         $nome = strip_tags(trim($_POST["nome"]));
