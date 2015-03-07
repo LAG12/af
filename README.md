@@ -9,4 +9,5 @@ This project contain:
 - a form html file
 - a process php file
 - a app js file
-- a links html file
+- a links html file<br>
+<a href="http://lagodev.altervista.org/form1/form.html">Preview</a>
