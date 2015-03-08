@@ -1,3 +1,13 @@
+/* Author: Bob Smith
+Last modified: April 10
+This script processes the customer orders.
+/* Author: Bob Smith
+Last modified: April 10
+This script processes the customer orders.
+<!--   Author: Lago
+       Last Modified: 8/3/2015
+       This script processes the form -->
+
 <?php
     //  Ajax Form v. 1.0
     // Controlliamo che la richiesta sia stata effettuata mediante il metodo POST
@@ -8,7 +18,7 @@
         // Utilizziamo il metodo PHP trim() per eliminare eventuali spazi bianchi 
         // ad inizio o alla fine della stringa. 
         // Con la funzione strip_tags rimuoviamo eventuali tag HTML e PHP. 
-        // str_replace — Sostituisce tutte le occorrenze della stringa cercata con la stringa di sostituzione. 
+        // str_replace() Sostituisce tutte le occorrenze della stringa cercata con la stringa di sostituzione. 
         // Il filtro FILTER_SANITIZE_EMAIL, utilizzato come secondo argomento per la funzione filter_var(), 
         // consente di rimuovere, da una determinata stringa, tutti i caratteri non consentiti per un indirizzo di 
         // posta elettronica, permette invece di utilizzare tutte le lettere dell’alfabeto, simboli numerici e i 
