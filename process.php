@@ -1,9 +1,3 @@
-/* Author: Bob Smith
-Last modified: April 10
-This script processes the customer orders.
-/* Author: Bob Smith
-Last modified: April 10
-This script processes the customer orders.
 <!--   Author: Lago
        Last Modified: 8/3/2015
        This script processes the form -->
@@ -58,7 +52,7 @@ This script processes the customer orders.
         // Inviamo l'email
         if (mail($destinatario, $soggetto, $contenuto_email, $intestazioni_email)) {
             // 200 OK - Risposta standard per le richieste HTTP andate a buon fine.
-            header("HTTP/1.1 200 OK"); // Utilizziamo la funzione header() invece della più recente http_response_code perchè ancora non sempre supportata
+            header("HTTP/1.1 200 OK"); // Utilizziamo la funzione header() invece della pi� recente http_response_code perchè ancora non sempre supportata
             echo "Grazie! Il tuo messaggio e' stato inviato.";
         } else {
             // 500 Internal Server Error - Messaggio di errore generico senza alcun dettaglio
@@ -67,8 +61,8 @@ This script processes the customer orders.
         }
 
     } else {
-        // 403 Forbidden - La richiesta è legittima ma il server si rifiuta di soddisfarla.
-        header('HTTP/1.1 403 Forbidden'); // Utilizziamo la funzione header() invece della più recente http_response_code perchè ancora non sempre supportata
+        // 403 Forbidden - La richiesta � legittima ma il server si rifiuta di soddisfarla.
+        header('HTTP/1.1 403 Forbidden'); // Utilizziamo la funzione header() invece della pi� recente http_response_code perchè ancora non sempre supportata
         echo "C'e' stato un problema con l'invio. Riprova. Grazie.";
     }
 
