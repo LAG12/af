@@ -1,3 +1,7 @@
+<!--   Author: Lago
+       Last Modified: 8/3/2015
+       This script processes the form -->
+
 <?php
     //  Ajax Form v. 1.0
     // Controlliamo che la richiesta sia stata effettuata mediante il metodo POST
