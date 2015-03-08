@@ -57,7 +57,7 @@
         } else {
             // 500 Internal Server Error - Messaggio di errore generico senza alcun dettaglio
             header('HTTP/1.1 500 Internal Server Error');
-            echo "Oops! Qualcosa e' andato storto e non Ã¨ stato possibile inviare il messaggio";
+            echo "Oops! Qualcosa e' andato storto e non è stato possibile inviare il messaggio";
         }
 
     } else {
