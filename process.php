@@ -28,8 +28,8 @@
         if ( empty($nome) OR empty($cognome) OR empty($messaggio) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // 400 Bad Request - La richiesta non può essere soddisfatta a causa di errori di sintassi.
             header("HTTP/1.0 400 bad request" ); // Utilizziamo la funzione header() invece della più recente http_response_code perchè ancora non sempre supportata
-            echo "Uhm... Hai completato tutti i campi richiesti? Completa il modulo "
-            . "ed invialo nuovamente. Grazie.";
+            echo "Uhm... Hai completato tutti i campi richiesti? Completa il modulo"
+            . " ed invialo nuovamente. Grazie.";
             exit;
         }
 

@@ -1,3 +1,7 @@
+//    Author: Lago
+//    Last Modified: 8/3/2015
+//    This script submit the form via Ajax to the process.php
+
 $(function() {
         
         // Creiamo 2 variabili (form - formMessages) che fanno riferimento a corrispondenti
